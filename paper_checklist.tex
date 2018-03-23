@@ -1,0 +1,153 @@
+% ----------------------------------------------------------------
+% Article Class (This is a LaTeX2e document)  ********************
+% ----------------------------------------------------------------
+
+\documentclass{ctexart}
+
+\usepackage{latexsym,bm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+
+\usepackage{setspace}
+\usepackage{supertabular}
+\usepackage{indentfirst}
+\usepackage{multirow}
+\usepackage{ulem}
+\usepackage{fontspec}
+
+
+
+
+\usepackage[unicode]{hyperref}
+\usepackage{xcolor}
+\usepackage{cite}
+
+
+
+\usepackage{eso-pic}
+\usepackage{tikz}
+
+\usetikzlibrary{shapes.geometric, arrows}
+
+% ----------------------------------------------------------------
+\begin{document}
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|l|l|l|}
+\hline
+% after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+& 编号 & 项目& 备注\\ \hline
+ & 1 & \textcolor[rgb]{0.00,0.00,1.00}{\textbf{Language}}&\\\hline
+$\bigcirc$& 1.1 & 不用第一/第二人称：可将I/we/you 代以 one，或改用被动语态 &\\\hline
+$\bigcirc$& 1.2 & 使用专业词汇，不用通俗用语：比较 &\\\hline
+$\bigcirc$& 1.3 & 不用简略形式：can't, it's, that's，代以：cannot, it is, that is &\\\hline
+$\bigcirc$& 1.4 & 不用多重从句：一句中不能出现多个that/what/which/where...&\\\hline
+$\bigcirc$& 1.5 & 避免武断性的评语：慎用 none, always, never等词语 &\\\hline
+$\bigcirc$& 1.6 & 拉丁词应斜体：\emph{et al、etc、in situ、in vivo}...&\\\hline
+$\bigcirc$& 1.7 & 不用``="代替``is"/``equals"；不用``+"代替``and"&\\\hline
+$\bigcirc$& 1.8 & 正文中公式采用$f(x)=x/a$，而不采用$f(x)=\frac{x}{a}$ 的形式&\\\hline
+$\bigcirc$& 1.9 & 数字（正体）与单位（斜体）之间有空格：$0.2~mm$，非$0.2mm$ &\\\hline
+$\bigcirc$& 1.10 & 温度/角度符号与数字之间无空格：$36.7^\circ$ &\\\hline
+$\bigcirc$& 1.11 & 英文标点之后有空格：a, b 而非  a,b &\\\hline
+$\bigcirc$& 1.12 & 符号在正文和公式中，格式相同： 矩阵 $\mathbf{A}$， 矢量$\mathbf{v}$，函数$f(x)$&\\\hline
+$\bigcirc$& 1.13 & 拉丁字母不能误用：$\mu m$非$um$，$j\omega$非$jw$ &\\\hline
+$\bigcirc$& 1.14 & 正文交叉引用时，使用红/蓝色超链接，如：Figure \ref{tab:8}, 文献[\ref{tab:4}] &\\\hline
+$\bigcirc$& 1.15 & 段落以3到5个句子为宜 &\\\hline
+$\bigcirc$& 1.16 & 数字不能做为一个句子的开头 &\\\hline
+$ $&  &  &\\\hline
+
+ & 2 & \textcolor[rgb]{0.00,0.00,1.00}{\textbf{Title}}&\\\hline
+$\bigcirc$ & 2.1 & 单词个数小于$\sim 15$&\\\hline
+$\bigcirc$ & 2.2 & 不包含结果或结论的内容 &\\\hline
+$\bigcirc$ & 2.3 & 单词首字母大写&\\\hline
+$\bigcirc$ & 2.4 & 冠词、介词、连词和'to'，首字母小写&\\\hline
+$\bigcirc$ & 2.5 & 不出现Study/Investigation/...等&\\\hline
+$\bigcirc$ & 2.5 & 不出现小学科领域内的简略词，如ECT/ERT&\\\hline
+$\bigcirc$ & 2.5 & 不出现new, novel等&\\\hline
+$ $&  &  &\\\hline
+
+
+$ $ & 3 & \textcolor[rgb]{0.00,0.00,1.00}{\textbf{Abstract}}&\\\hline
+$\bigcirc$ & 3.1 & 摘要不出现图、表、公式&\\\hline
+$\bigcirc$ & 3.2 & 摘要不能照抄正文&\\\hline
+$\bigcirc$ & 3.3 & 涵盖如下内容：目的/问题、方法、结果/发现、结论/影响&\\\hline
+$\bigcirc$ & 3.4 & 摘要只出现一次：“In this paper, ...”&\\\hline
+$ $&  &  &\\\hline
+%$\bigcirc$ & 3.5 & &\\\hline
+
+ & 4 & \textcolor[rgb]{0.00,0.00,1.00}{\textbf{Introduction}}&\\\hline
+$\bigcirc$& 4.1 & 是否已清楚表述待研究的问题 &\\\hline
+$\bigcirc$& 4.2 & 未重复使用“摘要”的内容 &\\\hline
+$ $& 4.3 & 语态使用正确： &\\\hline
+$\bigcirc$& 4.3.1 & 一般现在时：general background and description of the work &\\\hline
+$\bigcirc$& 4.3.2 & 现在完成时：past to present solutions&\\\hline
+$\bigcirc$& 4.3.3 & 一般过去时：my contribution，也可用一般现在时&\\\hline
+$\bigcirc$& 4.4 & 每个段落都在开头句表明意图/topic &\\\hline
+$\bigcirc$& 4.5 & 这部分只出现一次：“In this paper, ...” &\\\hline
+$ $&  &  &\\\hline
+\end{tabular}
+\caption{论文检查表}\label{tab:4}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|l|l|l|}
+\hline
+% after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+& 编号 & 项目& 备注\\ \hline
+ & 5 & \textcolor[rgb]{0.00,0.00,1.00}{\textbf{Method}}&\\\hline
+$\bigcirc$& 5.1 & 完整、简洁 &\\\hline
+$\bigcirc$& 5.2 & 步骤/方法清晰、合理 &\\\hline
+$\bigcirc$& 5.3 & 至少包括1幅图，用于说明方法 &\\\hline
+$ $&  &  &\\\hline
+
+ & 6 & \textcolor[rgb]{0.00,0.00,1.00}{\textbf{Results, Discussions and Conclusions}}&\\\hline
+$\bigcirc$& 6.1 & 数据/结果，尽量以图的形式呈现 &\\\hline
+$\bigcirc$& 6.2 & Being convincing and credible &\\\hline
+$\bigcirc$& 6.3 & Interpret the results without repeating them &\\\hline
+$\bigcirc$& 6.4 & 结论：清晰不含糊，让人印象深刻 &\\\hline
+$\bigcirc$& 6.5 & 结论不重复摘要和引言的内容 &\\\hline
+$\bigcirc$& 6.6 & 避免冗长而无实质内容 &\\\hline
+$\bigcirc$& 6.7 & 注意：Results, Discussions, Conclusions都是复数 &\\\hline
+$ $&  &  &\\\hline
+
+ & 7 & \textcolor[rgb]{0.00,0.00,1.00}{\textbf{Acknowledgments}}&\\\hline
+$\bigcirc$& 7.1 & 包括最新的基金号 &\\\hline
+$\bigcirc$& 7.2 & 感谢对本论文写作有帮助的人或机构，必须写明for... &\\\hline
+$ $&  &  &\\\hline
+
+& 8 & \textcolor[rgb]{0.00,0.00,1.00}{\textbf{References}}&\\\hline
+$\bigcirc$& 8.1 & 可用文献软件（EndNote/Jabref）或Baidu/Google学术 &\\\hline
+$\bigcirc$& 8.2 & 文献引用时，先正面和客观的评价，再说问题&\\\hline
+$\bigcirc$& 8.3 & 参考文献条目中，提供DOI链接&\\\hline
+$\bigcirc$& 8.4 & 引用必要的经典文献，$3\sim6$篇&\\\hline
+$\bigcirc$& 8.5 & 引用最近5年的文献，占比$50\%$以上&\\\hline
+$\bigcirc$& 8.6 & 引用所投期刊的文献，3+篇&\\\hline
+$\bigcirc$& 8.7 & 引用尽可能列出所有作者，但第三及之后的作者用\emph{et al}代替&\\\hline
+$\bigcirc$& 8.8 & 一般不引用教科书/书/学位论文&\\\hline
+$\bigcirc$& 8.9 & 可以适当引用所投期刊AE的论文&\\\hline
+$ $&  &  &\\\hline
+
+ & 9 & \textcolor[rgb]{0.00,0.00,1.00}{\textbf{Figures and Tables}}&\\\hline
+$\bigcirc$& 9.1 & 所有数据都以excel表格保存，并注明对应的图/表 &\\\hline
+$\bigcirc$& 9.2 & 图片分辨率$>600~dpi$ &\\\hline
+$\bigcirc$& 9.3 & 图片格式为tiff/eps/pdf/jpg &\\\hline
+$\bigcirc$& 9.4 & 图片宽度：半幅7.5 cm，全幅15 cm&\\\hline
+$\bigcirc$& 9.5 & 使用软件的图片导出功能，而不是截屏&\\\hline
+$\bigcirc$& 9.6 & 所有图片按照文中的顺序命名（fig\_8.tiff），并集中保存&\\\hline
+$\bigcirc$& 9.7 & 横纵坐标轴有名称和单位&\\\hline
+$\bigcirc$& 9.8 & 图表字体符合要求，默认用Times New Roman/Arial&\\\hline
+$\bigcirc$& 9.9 & 同一类型的文字，字号保持一致，且$>8~pt$&\\\hline
+$\bigcirc$& 9.10 & 准确、清楚、有条理的图片标记，插图上所有元素对位整齐 &\\\hline
+$\bigcirc$& 9.11 & 内容应占据整图$90\%$以上空间，不能留白太多&\\\hline
+$ $&  &  &\\\hline
+%$\bigcirc$& 9. & &\\\hline
+\end{tabular}
+\caption{论文检查表（续）}\label{tab:8}
+\end{table}
+
+\end{document}
+% ----------------------------------------------------------------
